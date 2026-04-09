@@ -114,7 +114,42 @@ section {
   color: var(--text-color);
   font-size: 18px;
   font-weight: 500;
+  line-height: 1.5;
   margin-bottom: 25px;
+}
+
+.typing-line {
+  display: block;
+  max-width: 680px;
+}
+
+#typed-greeting,
+#typed-name,
+#typed-text {
+  color: var(--text-color);
+}
+
+#typed-text .typed-highlight {
+  color: var(--main-color);
+}
+
+.typing-cursor {
+  color: var(--main-color);
+  margin-left: 3px;
+  font-weight: 700;
+  display: inline-block;
+  animation: typingBlink 0.9s step-end infinite;
+}
+
+@keyframes typingBlink {
+  0%,
+  45% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
 }
 
 .btn {
@@ -528,6 +563,9 @@ form .send-btn:hover {
   }
   .home-text h6 {
     font-size: 14px;
+  }
+  .typing-line {
+    max-width: 100%;
   }
 
   .about {
