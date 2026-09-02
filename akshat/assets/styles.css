@@ -148,7 +148,6 @@ section {
   width: 430px;
   max-width: 100%;
   height: auto;
-  border-radius: 50%;
   animation: float 5s ease-in-out infinite;
 }
 
