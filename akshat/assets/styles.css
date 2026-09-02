@@ -188,8 +188,9 @@ section {
 
 .typing-line {
   display: block;
-  max-width: none;
-  white-space: nowrap;
+  max-width: 650px;
+  white-space: normal;
+  word-break: break-word;
 }
 
 #typed-greeting,
@@ -250,7 +251,7 @@ section {
 }
 
 .about-img img {
-  width: 400px;
+  width: 440px;
   max-width: 100%;
   height: auto;
   border-radius: 12px;
